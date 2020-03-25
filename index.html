@@ -2,13 +2,13 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Google Analytics Advanced Integration</title>
+  <meta charset="UTF-8">
+  <title>Google Analytics Advanced Integration</title>
 </head>
 
 <body>
 
-	<video-js
+  <video-js
     id="myPlayerID"
     data-account="1752604059001"
     data-player="YQMkeKRuP"
@@ -18,16 +18,16 @@
     data-playlist-id=""
     data-application-id=""
     width="640" height="360"></video-js>
-	<script src="https://players.brightcove.net/1752604059001/YQMkeKRuP_default/index.min.js"></script>
+  <script src="https://players.brightcove.net/1752604059001/YQMkeKRuP_default/index.min.js"></script>
 
-	<!-- Load the Google Analytics plugin manually. Do not configure it in the Studio -->
-	<!-- If you configure it in the Studio, it will be initialized on player load and -->
-	<!-- it will be too late to change the settings (they cannot be overridden). -->
-	<script src="//players.brightcove.net/videojs-bc-ga/1/videojs-bc-ga.min.js"></script>
+  <!-- Load the Google Analytics plugin manually. Do not configure it in the Studio -->
+  <!-- If you configure it in the Studio, it will be initialized on player load and -->
+  <!-- it will be too late to change the settings (they cannot be overridden). -->
+  <script src="//players.brightcove.net/videojs-bc-ga/1/videojs-bc-ga.min.js"></script>
 
-	<script>
-	  videojs.getPlayer('myPlayerID').ready(function() {
-	    var myPlayer = this;
+  <script>
+    videojs.getPlayer('myPlayerID').ready(function() {
+      var myPlayer = this;
 
       // Set up the Google Analytics plugin options.
       // The plugin has logic to fire a player load beacon after the player is loaded so there's no risk of missing it
@@ -42,13 +42,13 @@
       	"bcvideo_platform_version": "dimension13"
       	},
       	"eventsToTrack": {
-      		"video_impression": "Video Impression",
-      		"play_request": "Play Request",
-      		"video_engagement": "Video Engagement",
-      		"ad_start": "Ad Start",
-      		"ad_end": "Ad End",
-      		"player_load": "Player Load",
-      		"error": "Error"
+          "video_impression": "Video Impression",
+          "play_request": "Play Request",
+          "video_engagement": "Video Engagement",
+          "ad_start": "Ad Start",
+          "ad_end": "Ad End",
+          "player_load": "Player Load",
+          "error": "Error"
       	},
       	"tracker": "UA-150904906-1"
       })
@@ -58,8 +58,8 @@
       	- video_complete
       */
 
-	  });
-	</script>
+    });
+  </script>
 
 </body>
 </html>
